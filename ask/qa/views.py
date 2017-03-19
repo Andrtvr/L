@@ -7,6 +7,8 @@ from django.core.urlresolvers import reverse
 from .forms import AskForm, AnswerForm
 from django.contrib.auth.models import AnonymousUser, User
 from django.utils import timezone
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib import auth
 
 def paginate(request, qs):
     try:
@@ -68,13 +70,13 @@ def add_answ(request):
     if request.method=='POST':
         form = AnswerForm(request.POST)
 
-        if request.user.is_authenticated():
-            pass
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect('/0/')
         else:
 
             if form.is_valid():
                 post = form.save(commit=False)
-                post.author = User(id=1)
+                post.author = request.user #User(id=1)
                 post.added_at = timezone.now()
                 post.save()
                 url = reverse('question_detail', args=[post.question_id])
@@ -88,13 +90,13 @@ def ask(request):
      if request.method=='POST':
         form = AskForm(request.POST)
 
-        if request.user.is_authenticated():
-            pass
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect('/huy/')
         else:
 
             if form.is_valid():
                 post = form.save(commit=False)
-                post.author = User(id=1)
+                post.author = request.user #User(id=1)
                 post.added_at = timezone.now()
                 post.save()
                 url = reverse('question_detail', args=[post.id])
@@ -102,4 +104,45 @@ def ask(request):
                 return HttpResponseRedirect(url)
      else:
         form = AskForm()
-     return render(request, 'qa/ask.html', {'form': form})
+     return render(request, 'qa/ask.html', {'form': form}) #'username': auth.get_user(request).username},)
+
+def signup(request):
+    if request.method=='POST':
+        form = UserCreationForm(request.POST)
+
+        if request.user.is_authenticated():
+            pass
+        else:
+
+            if form.is_valid():
+                post = form.save()
+
+
+                post.save()
+                #url = reverse('question_detail', args=[post.question_id])
+
+                return HttpResponseRedirect('/')
+    else:
+        form = UserCreationForm()
+    return render(request, 'qa/signup.html', {'form': form})
+
+def login(request):
+    if request.method=='POST':
+        form = AuthenticationForm()
+        username = request.POST['username']
+        password = request.POST['password']
+        user = auth.authenticate(username=username, password=password)
+        if user is not None and user.is_active:
+            auth.login(request, user)
+
+            return HttpResponseRedirect('/welcom/')
+        else:
+           return HttpResponseRedirect('/0/')
+
+
+    else:
+        form = AuthenticationForm()
+    return render(request, 'qa/login.html', {'form': form})
+
+def welcom(request):
+    return render(request, 'qa/welcom.html')

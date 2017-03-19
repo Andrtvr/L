@@ -5,17 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-{% if user.is_authenticated %}Привет, {{ user.username }}{% endif %}
 {% for e in form.non_field_errors %}
 <div class="alert alert-danger">{{e}}</div>
 {% endfor %}
-<form class="form" method="post" action="/ask/">
+<form class="form" method="post" action="/login/">
     {% csrf_token %}
    {{form.as_p}}
 
     <div class="form-actions">
         <button type="submit" class="btn btn-primary">
-            Save</button>
+            Войти</button>
     </div>
 </form>
 </body>
