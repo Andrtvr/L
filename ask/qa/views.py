@@ -84,3 +84,22 @@ def add_answ(request):
         form = AnswerForm()
     return render(request, 'qa/ad_answ.html', {'form': form})
 
+def ask(request):
+     if request.method=='POST':
+        form = AskForm(request.POST)
+
+        if request.user.is_authenticated():
+            pass
+        else:
+
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = User(id=1)
+                post.added_at = timezone.now()
+                post.save()
+                url = reverse('question_detail', args=[post.id])
+
+                return HttpResponseRedirect(url)
+     else:
+        form = AskForm()
+     return render(request, 'qa/ask.html', {'form': form})
