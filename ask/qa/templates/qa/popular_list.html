@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popular list</title>
+</head>
+<body>
+{% for q in questions %}
+    <div class="com" style="border: 1px solid red; height: 200px">
+        {{q}}
+    </div>
+    {% endfor %}
+
+<ul class="pagination">
+    {% for p in paginator.page_range %}
+        {% if p == page.number %}
+    <li class="active">
+    {% else %}
+    <li>
+    {% endif %}
+    <a href="{{ paginator.baseurl }}{{p}}">
+        {{p}}</a>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+</body>
+</html>
