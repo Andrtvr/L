@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c40ea327-5f46-429e-8132-34e7b25da2a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/templates/qa/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/templates/qa/signup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/templates/qa/welcom.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/ask/settings.py" afterPath="$PROJECT_DIR$/ask/ask/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/qa/admin.py" afterPath="$PROJECT_DIR$/ask/qa/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/qa/forms.py" afterPath="$PROJECT_DIR$/ask/qa/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/qa/models.py" afterPath="$PROJECT_DIR$/ask/qa/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/qa/templates/qa/ask.html" afterPath="$PROJECT_DIR$/ask/qa/templates/qa/ask.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/qa/templates/qa/new_question_list.html" afterPath="$PROJECT_DIR$/ask/qa/templates/qa/new_question_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/qa/urls.py" afterPath="$PROJECT_DIR$/ask/qa/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/qa/views.py" afterPath="$PROJECT_DIR$/ask/qa/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/init.sh" afterPath="$PROJECT_DIR$/etc/init.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,38 +22,19 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ask/qa/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="77" column="46" lean-forward="true" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+            <state relative-caret-position="480">
+              <caret line="116" column="31" lean-forward="true" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#577#998#0" expanded="false" />
-                <element signature="e#1031#1347#0" expanded="false" />
-                <element signature="e#1385#1713#0" expanded="false" />
-                <element signature="e#1753#2048#0" expanded="false" />
-                <element signature="e#2712#3355#0" expanded="false" />
-                <element signature="e#3382#3858#0" expanded="false" />
-                <element signature="e#3884#4412#0" expanded="false" />
+                <element signature="e#588#1009#0" expanded="false" />
+                <element signature="e#1042#1358#0" expanded="false" />
+                <element signature="e#1396#1724#0" expanded="false" />
+                <element signature="e#1764#2059#0" expanded="false" />
+                <element signature="e#2088#2698#0" expanded="false" />
+                <element signature="e#2723#3366#0" expanded="false" />
+                <element signature="e#3881#4435#0" expanded="false" />
+                <element signature="e#4462#4502#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new_question_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/new_question_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcom.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/welcom.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="68" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -71,66 +42,13 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ask/qa/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
-                <element signature="e#321#392#0" expanded="false" />
-                <element signature="e#341#392#0" expanded="false" />
-                <element signature="e#436#508#0" expanded="false" />
+                <element signature="e#396#467#0" expanded="false" />
+                <element signature="e#416#467#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ask.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/ask.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/signup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ask/qa/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ask/qa/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -162,7 +80,6 @@
         <option value="$PROJECT_DIR$/ask/qa/models.py" />
         <option value="$PROJECT_DIR$/ask/qa/templates/qa/register.html" />
         <option value="$PROJECT_DIR$/ask/ask/settings.py" />
-        <option value="$PROJECT_DIR$/ask/qa/forms.py" />
         <option value="$PROJECT_DIR$/ask/qa/templates/qa/signup.html" />
         <option value="$PROJECT_DIR$/ask/qa/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/ask/qa/templates/qa/welcom.html" />
@@ -170,6 +87,7 @@
         <option value="$PROJECT_DIR$/ask/qa/templates/qa/login.html" />
         <option value="$PROJECT_DIR$/ask/qa/templates/qa/new_question_list.html" />
         <option value="$PROJECT_DIR$/ask/qa/templates/qa/ask.html" />
+        <option value="$PROJECT_DIR$/ask/qa/forms.py" />
         <option value="$PROJECT_DIR$/ask/qa/views.py" />
       </list>
     </option>
@@ -177,7 +95,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="992" />
     <option name="y" value="52" />
-    <option name="width" value="918" />
+    <option name="width" value="908" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectView">
@@ -195,6 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,7 +208,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -449,10 +367,10 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="992" y="52" width="918" height="1028" extended-state="4" />
+    <frame x="992" y="52" width="908" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30614525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30508474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -476,7 +394,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30614525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30508474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -488,23 +406,98 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ask/qa/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#588#1009#0" expanded="false" />
+            <element signature="e#1042#1358#0" expanded="false" />
+            <element signature="e#1396#1724#0" expanded="false" />
+            <element signature="e#1764#2059#0" expanded="false" />
+            <element signature="e#2088#2698#0" expanded="false" />
+            <element signature="e#2723#3366#0" expanded="false" />
+            <element signature="e#3881#4435#0" expanded="false" />
+            <element signature="e#4462#4502#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/new_question_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/welcom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#396#467#0" expanded="false" />
+            <element signature="e#416#467#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/ask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ask/qa/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
           <caret line="104" column="35" lean-forward="false" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#577#998#0" expanded="false" />
-            <element signature="e#1031#1347#0" expanded="false" />
-            <element signature="e#1385#1713#0" expanded="false" />
-            <element signature="e#1753#2048#0" expanded="false" />
-            <element signature="e#2712#3355#0" expanded="false" />
-            <element signature="e#3382#3858#0" expanded="false" />
-            <element signature="e#3884#4412#0" expanded="false" />
+            <element signature="e#588#1009#0" expanded="false" />
+            <element signature="e#1042#1358#0" expanded="false" />
+            <element signature="e#1396#1724#0" expanded="false" />
+            <element signature="e#1764#2059#0" expanded="false" />
+            <element signature="e#2088#2698#0" expanded="false" />
+            <element signature="e#2723#3366#0" expanded="false" />
+            <element signature="e#3881#4435#0" expanded="false" />
+            <element signature="e#4462#4502#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -513,7 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -538,13 +529,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#577#998#0" expanded="false" />
-            <element signature="e#1031#1347#0" expanded="false" />
-            <element signature="e#1385#1713#0" expanded="false" />
-            <element signature="e#1753#2048#0" expanded="false" />
-            <element signature="e#2712#3355#0" expanded="false" />
-            <element signature="e#3382#3858#0" expanded="false" />
-            <element signature="e#3884#4412#0" expanded="false" />
+            <element signature="e#588#1009#0" expanded="false" />
+            <element signature="e#1042#1358#0" expanded="false" />
+            <element signature="e#1396#1724#0" expanded="false" />
+            <element signature="e#1764#2059#0" expanded="false" />
+            <element signature="e#2088#2698#0" expanded="false" />
+            <element signature="e#2723#3366#0" expanded="false" />
+            <element signature="e#3881#4435#0" expanded="false" />
+            <element signature="e#4462#4502#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -560,9 +552,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -570,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -606,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,64 +623,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ask/qa/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/templates/registration/login.html" />
     <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ask/qa/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ask/qa/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/new_question_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/welcom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="68" />
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -703,37 +638,79 @@
     <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/ask.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/welcom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/new_question_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/templates/qa/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/qa/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ask/qa/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#321#392#0" expanded="false" />
-            <element signature="e#341#392#0" expanded="false" />
-            <element signature="e#436#508#0" expanded="false" />
+            <element signature="e#396#467#0" expanded="false" />
+            <element signature="e#416#467#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ask/qa/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="77" column="46" lean-forward="true" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+        <state relative-caret-position="480">
+          <caret line="116" column="31" lean-forward="true" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#577#998#0" expanded="false" />
-            <element signature="e#1031#1347#0" expanded="false" />
-            <element signature="e#1385#1713#0" expanded="false" />
-            <element signature="e#1753#2048#0" expanded="false" />
-            <element signature="e#2712#3355#0" expanded="false" />
-            <element signature="e#3382#3858#0" expanded="false" />
-            <element signature="e#3884#4412#0" expanded="false" />
+            <element signature="e#588#1009#0" expanded="false" />
+            <element signature="e#1042#1358#0" expanded="false" />
+            <element signature="e#1396#1724#0" expanded="false" />
+            <element signature="e#1764#2059#0" expanded="false" />
+            <element signature="e#2088#2698#0" expanded="false" />
+            <element signature="e#2723#3366#0" expanded="false" />
+            <element signature="e#3881#4435#0" expanded="false" />
+            <element signature="e#4462#4502#0" expanded="false" />
           </folding>
         </state>
       </provider>

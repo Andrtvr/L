@@ -5,6 +5,7 @@ from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 class AskForm(forms.ModelForm):
 
@@ -22,4 +23,10 @@ class AnswerForm(forms.ModelForm):
         fields = ('text', 'question')
 
 
+
+class Sign_user(forms.ModelForm):
+   email = forms.CharField( max_length = 30 )
+   class Meta:
+       model = User
+       fields = ('username', 'password')
 

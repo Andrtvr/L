@@ -4,7 +4,7 @@ from django.core.paginator import Paginator, EmptyPage
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
-from .forms import AskForm, AnswerForm
+from .forms import AskForm, AnswerForm, Sign_user
 from django.contrib.auth.models import AnonymousUser, User
 from django.utils import timezone
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
@@ -108,7 +108,7 @@ def ask(request):
 
 def signup(request):
     if request.method=='POST':
-        form = UserCreationForm(request.POST)
+        form = Sign_user(request.POST)
 
         if request.user.is_authenticated():
             pass
@@ -123,12 +123,13 @@ def signup(request):
 
                 return HttpResponseRedirect('/')
     else:
-        form = UserCreationForm()
+        form = Sign_user()
     return render(request, 'qa/signup.html', {'form': form})
 
 def login(request):
     if request.method=='POST':
         form = AuthenticationForm()
+        #form =Sign_user()
         username = request.POST['username']
         password = request.POST['password']
         user = auth.authenticate(username=username, password=password)
@@ -141,7 +142,7 @@ def login(request):
 
 
     else:
-        form = AuthenticationForm()
+        form =AuthenticationForm()
     return render(request, 'qa/login.html', {'form': form})
 
 def welcom(request):
