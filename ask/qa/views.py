@@ -8,7 +8,8 @@ from .forms import AskForm, AnswerForm, Sign_user
 from django.contrib.auth.models import AnonymousUser, User
 from django.utils import timezone
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib import auth
+from django.contrib.auth import authenticate, login
+
 
 def paginate(request, qs):
     try:
@@ -31,6 +32,7 @@ def paginate(request, qs):
         page = paginator.page(paginator.num_pages)
     return page, paginator
 
+
 def popular_list(request):
     qs = Question.objects.all()
     qs = qs.order_by('-rating')
@@ -42,6 +44,7 @@ def popular_list(request):
         'page': page,
         'paginator': paginator,
     })
+
 
 def new_question_list(request):
     qs = Question.objects.all()
@@ -55,6 +58,7 @@ def new_question_list(request):
         'paginator': paginator,
     })
 
+
 def question_detail(request, pk):
     question = get_object_or_404(Question, id=pk)
     answers = Answer.objects.filter(question_id=pk)
@@ -65,6 +69,7 @@ def question_detail(request, pk):
         'form': form,
        # 'pk': pk,
     })
+
 
 def add_answ(request):
     if request.method=='POST':
@@ -86,6 +91,7 @@ def add_answ(request):
         form = AnswerForm()
     return render(request, 'qa/ad_answ.html', {'form': form})
 
+
 def ask(request):
      if request.method=='POST':
         form = AskForm(request.POST)
@@ -106,44 +112,46 @@ def ask(request):
         form = AskForm()
      return render(request, 'qa/ask.html', {'form': form}) #'username': auth.get_user(request).username},)
 
+
 def signup(request):
-    if request.method=='POST':
-        form = Sign_user(request.POST)
-
-        if request.user.is_authenticated():
-            pass
-        else:
-
-            if form.is_valid():
-                post = form.save()
-
-
-                post.save()
-                #url = reverse('question_detail', args=[post.question_id])
-
-                return HttpResponseRedirect('/')
+    if request.method == 'POST':
+        form = Sign_user(data=request.POST)
+        if form.is_valid():
+            user = form.save()
+            user.set_password(user.password)
+            user.save()
+            #user.is_valid()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return HttpResponseRedirect('/welcom/')
     else:
         form = Sign_user()
     return render(request, 'qa/signup.html', {'form': form})
 
-def login(request):
-    if request.method=='POST':
-        form = AuthenticationForm()
-        #form =Sign_user()
-        username = request.POST['username']
-        password = request.POST['password']
-        user = auth.authenticate(username=username, password=password)
-        if user is not None and user.is_active:
-            auth.login(request, user)
 
-            return HttpResponseRedirect('/welcom/')
+def login_u(request):
+
+    if request.method == 'POST':
+        #form = AuthenticationForm()
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(username=username, password=password)
+        if user:
+            if user.is_active:
+                login(request, user)
+                return HttpResponseRedirect('/')
+            else:
+                return HttpResponseRedirect('/not_active/')
         else:
-           return HttpResponseRedirect('/0/')
+            return HttpResponseRedirect('/error_data/')
 
 
     else:
-        form =AuthenticationForm()
+        form = AuthenticationForm()
     return render(request, 'qa/login.html', {'form': form})
+
 
 def welcom(request):
     return render(request, 'qa/welcom.html')

@@ -25,8 +25,8 @@ class AnswerForm(forms.ModelForm):
 
 
 class Sign_user(forms.ModelForm):
-   email = forms.CharField( max_length = 30 )
+   #email = forms.CharField( max_length = 30 )
    class Meta:
        model = User
-       fields = ('username', 'password')
+       fields = ('username', 'email', 'password')
 
